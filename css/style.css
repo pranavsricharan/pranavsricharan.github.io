@@ -1,0 +1,135 @@
+/*fonts for use*/
+@font-face
+{
+font-family: Roboto;
+src: url('../fonts/Roboto-Regular.ttf');
+font-weight:400; 
+}
+@font-face
+{
+font-family: Roboto;
+src: url('../fonts/Roboto-Light.ttf');
+font-weight:300; 
+}
+@font-face
+{
+font-family: Roboto;
+src: url('../fonts/Roboto-Thin.ttf');
+font-weight:200; 
+}
+@font-face
+{
+font-family: Roboto;
+src: url('../fonts/Roboto-Bold.ttf');
+font-weight:700; 
+}
+
+*
+{
+	margin:0;
+	padding:0;
+}
+
+
+body
+{
+	font-family:Roboto,Arial;
+	font-weight:300;
+	background-color:#fff;
+	color:#333;
+	overflow-x:hidden;
+}
+
+.header
+{
+	height:15vh;
+	width:100%;
+	
+}
+
+.logo
+{
+	font-weight:200;
+	line-height:15vh;
+	float:left;
+	margin-left:60px;
+	font-size:2em;
+}
+
+.header li
+{
+	list-style:none;
+	float:left;
+	margin-right:25px;
+	padding: 5px 0px;
+}
+
+.header ul
+{
+	color:#333;
+	float:right;
+	margin-right:100px;
+	margin-top:5vh;
+}
+
+li.active
+{
+	border-bottom:2px solid #333;
+}
+
+.cover
+{
+	height:85vh;
+	background:#e9ca1e;
+	width:100%;
+	text-align:center;
+}
+
+.coverText
+{
+	font-weight:200;
+	color:#666;
+	font-size:2em;
+	padding-top:40vh;
+}
+
+.cut
+{
+	background:#fff;
+	height:80%;
+	width:100vw;
+	z-index:1;
+	position:relative;
+	background-image:url('../img/geek-glasses.png');
+	background-repeat:no-repeat;
+	background-position:center 20%;
+	background-size: 20%;
+}
+
+.cut::after
+{
+	background: #fff;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 30%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	transform: skewY(-4.5deg);
+	transform-origin: 100%;
+	z-index: -1;
+	
+}
+
+.coverFull
+{
+	height:100vh;
+	width:100%;
+	
+}
+
+.yellowBg
+{
+	background:#e9ca1e;
+}
