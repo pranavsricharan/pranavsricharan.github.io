@@ -36,15 +36,66 @@ body
 	font-family:Roboto,Arial;
 	font-weight:300;
 	background-color:#fff;
-	color:#333;
+	color:#222;
 	overflow-x:hidden;
+}
+
+a
+{
+	color:#222;
+}
+
+button
+{
+	background:#222;
+	outline:none;
+	border:0;
+	padding:10px;
+	color:#fff;
+	font-weight:700;
+	margin:10px;
+	transition:all 0.2s linear;
+	cursor:pointer;
+}
+
+button:hover
+{
+	background:#111;
 }
 
 .header
 {
 	height:15vh;
 	width:100%;
+	background:#fff;
+	z-index:1000;
+	position:fixed;
+	top:0;
+	transition:all 0.2s linear;
+	border-color:#eee;
+}
+
+.header a
+{
+	text-decoration:none;
+}
+
+.fixed
+{
 	
+	
+	height:8vh;
+}
+
+.fixed>.logo
+{
+	font-size:1.5em;
+	line-height:8vh;
+}
+
+.fixed ul
+{
+	margin-top:2vh !important;
 }
 
 .logo
@@ -54,6 +105,7 @@ body
 	float:left;
 	margin-left:60px;
 	font-size:2em;
+	transition:all 0.2s linear;
 }
 
 .header li
@@ -66,23 +118,25 @@ body
 
 .header ul
 {
-	color:#333;
+	color:#222;
 	float:right;
 	margin-right:100px;
 	margin-top:5vh;
+	transition:all 0.2s linear;
 }
 
 li.active
 {
-	border-bottom:2px solid #333;
+	border-bottom:2px solid #222;
 }
 
 .cover
 {
 	height:85vh;
-	background:#e9ca1e;
+	background:#e9bd1e;
 	width:100%;
 	text-align:center;
+	margin-top:15vh;
 }
 
 .coverText
@@ -122,6 +176,8 @@ li.active
 	
 }
 
+
+
 .coverFull
 {
 	height:100vh;
@@ -129,7 +185,67 @@ li.active
 	
 }
 
+.sectionTitle
+{
+	text-align:center;
+	font-weight:200;
+	font-size:3em;
+	padding-top:10vh;
+}
+
+.innerWrap
+{
+	padding-left:10%;
+	margin:10px auto;
+}
+
+.innerWrap h3
+{
+	font-weight:400;
+	font-size:1.5em;
+}
+
+.innerWrap h6
+{
+	font-weight:200;
+	font-size:1.2em;
+	margin:5px auto;
+}
+
+.innerWrap img
+{
+	float:left;
+	max-width:40%;
+	margin-top:20px;
+	
+}
+
+.innerWrap p
+{
+	float:left;
+	width:50%;
+	margin-top:20px;
+	margin-left:20px;
+	text-align:justify;
+}
+
+.footer
+{
+	background:#ddd;
+	height:25vh;
+}
+
+.floatRight
+{
+	float:right;
+}
+
 .yellowBg
 {
-	background:#e9ca1e;
+	background:#e9bd1e;
+}
+
+.whiteTxt
+{
+	color:#fff;
 }

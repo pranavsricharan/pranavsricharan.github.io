@@ -2,15 +2,16 @@
 	<head>
 		<title>Pranav Sricharan | Home</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/jquery.min.js"></script>
 	</head>
 	<body>
-		<div class="header">
+		<div class="header" id="header">
 			<div class="logo">Pranav Sricharan</div>
 			<ul>
-				<li class="active">Home</li>
-				<li>About</li>
-				<li>Gallery</li>
-				<li>Contact</li>
+				<a href="index.html"><li class="active">Home</li></a>
+				<a href="about.html"><li>About</li></a>
+				<a href="projects.html"><li>Projects</li></a>
+				<a href="contact.html"><li>Contact</li></a>
 			</ul>
 		</div>
 		<div class="cover">
@@ -18,6 +19,20 @@
 			<div class="coverText">My world awaits you</div>
 			</div>
 		</div>
-		<div class="coverFull yellowBg"></div>
+		<div class="coverFull yellowBg whiteTxt">
+			<div class="sectionTitle">My latest work</div>
+			<div class="innerWrap">
+				<h3>Potion Brewer</h3>
+				<h6>A PHP templating engine</h6>
+				<img src="img/projects/pb1.png" />
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br />
+				<a href="projects.html"><button class="floatRight">View all projects</button></a>
+				</p>
+				
+			</div>
+		</div>
+		<div class="coverFull"></div>
+		<div class="footer"></div>
+		<script src="js/script.js"></script>
 	</body>
 </html>
