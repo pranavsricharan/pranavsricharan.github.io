@@ -67,17 +67,18 @@ button:hover
 {
 	height:15vh;
 	width:100%;
-	background:#fff;
+	background:rgba(255,255,255,0.9);
 	z-index:1000;
 	position:fixed;
 	top:0;
 	transition:all 0.2s linear;
-	border-color:#eee;
+	border-bottom:3px solid #fff;
 }
 
 .header a
 {
 	text-decoration:none;
+	color:inherit;
 }
 
 .fixed
@@ -114,6 +115,12 @@ button:hover
 	float:left;
 	margin-right:25px;
 	padding: 5px 0px;
+	transition:all 0.2s linear;
+}
+
+.header li:hover
+{
+	color:#999;
 }
 
 .header ul
@@ -135,8 +142,10 @@ li.active
 	height:85vh;
 	background:#e9bd1e;
 	width:100%;
-	text-align:center;
+	
 	margin-top:15vh;
+	
+
 }
 
 .coverText
@@ -145,6 +154,16 @@ li.active
 	color:#666;
 	font-size:2em;
 	padding-top:40vh;
+	text-align:center;
+	opacity:0;
+	transition:all 0.75s linear;
+
+}
+
+.coverTextOpaque
+{
+	opacity:1;
+	
 }
 
 .cut
@@ -156,8 +175,15 @@ li.active
 	position:relative;
 	background-image:url('../img/geek-glasses.png');
 	background-repeat:no-repeat;
-	background-position:center 20%;
+	background-position:100% 20%;
+	background-size: 0%;
+	transition:all 0.5s linear;
+}
+
+.fullSizeBg
+{
 	background-size: 20%;
+	background-position:center 20%;
 }
 
 .cut::after
@@ -185,6 +211,20 @@ li.active
 	
 }
 
+.picBg
+{
+	/*background-image:url('../img/DSC_2955_small.jpg');*/
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+.overlay
+{
+	/*background:rgba(0,0,0,0.5);*/
+	height:100%;
+	/*color:#fff;*/
+}
+
 .sectionTitle
 {
 	text-align:center;
@@ -196,7 +236,7 @@ li.active
 .innerWrap
 {
 	padding-left:10%;
-	margin:10px auto;
+	margin:40px auto;
 }
 
 .innerWrap h3
@@ -217,7 +257,33 @@ li.active
 	float:left;
 	max-width:40%;
 	margin-top:20px;
+	padding:20px;
+	background:rgba(255,255,255,0.25);
+	transition:all 0.2s linear;
 	
+}
+
+.rightImg .innerWrap img
+{
+	float:left;
+	max-width:15%;
+	margin-top:-20px;
+	margin-right:10%;
+	padding:10px;
+	background:#fff;
+	border:1px solid #ccc;
+	border-radius:2000px;
+	
+}
+
+.rightImg .innerWrap img:hover
+{
+	background:#e9bd1e;
+}
+
+.innerWrap img:hover
+{
+	background:rgba(255,255,255,0.5);
 }
 
 .innerWrap p
@@ -227,17 +293,44 @@ li.active
 	margin-top:20px;
 	margin-left:20px;
 	text-align:justify;
+	font-size:1.2em;
 }
 
 .footer
 {
 	background:#ddd;
 	height:25vh;
+	line-height:15vh;
+	font-weight:200;
+	font-size:1.2em;
+	text-align:center;
+	color:#666;
+}
+
+.footer a
+{
+	text-decoration:none;
+	color:#666;
+}
+
+.footer a:hover
+{
+	text-decoration:underline;
+}
+
+.lightTxt
+{
+	font-weight:300;
+}
+
+.redTxt
+{
+	color:#c65252;
 }
 
 .floatRight
 {
-	float:right;
+	float:right !important;
 }
 
 .yellowBg

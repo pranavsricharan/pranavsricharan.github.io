@@ -1,5 +1,13 @@
 document.onscroll=function(){fixHeader()};
+window.addEventListener("pageshow",animateBg);
 var prevScroll = 0;
+
+function animateBg()
+{
+	$("#cut").addClass("fullSizeBg");
+	$("#coverText").addClass("coverTextOpaque");
+}
+
 function fixHeader()
 {
 	
