@@ -211,6 +211,12 @@ li.active
 	
 }
 
+.coverMid
+{
+	height:75vh;
+	width:100%;
+}
+
 .picBg
 {
 	/*background-image:url('../img/DSC_2955_small.jpg');*/
@@ -276,10 +282,7 @@ li.active
 	
 }
 
-.rightImg .innerWrap img:hover
-{
-	background:#e9bd1e;
-}
+
 
 .innerWrap img:hover
 {
