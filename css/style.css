@@ -218,7 +218,6 @@ a
 {
 	color:#999;
 	background:transparent;
-	padding:0;
 }
 
 .sectionTitle
@@ -370,9 +369,9 @@ a
 	height:20vh !important;
 	background:#222;
 }
-.guitarBg
+.mainBg
 {
-	background-image:url('../img/site covers 2.jpg');
+	background-image:url('../img/site covers 4.jpg');
 }
 
 .whiteBg
