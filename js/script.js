@@ -1,25 +1,5 @@
-document.onscroll=function(){fixHeader()};
-window.addEventListener("pageshow",animateBg);
-var prevScroll = 0;
+//document.onscroll=function(){fixHeader()};
+//window.addEventListener("pageshow",animateBg);
+document.getElementById("nav").addEventListener("mouseover",function(){$("#mainArea").addClass("blur");console.log("over")});
+document.getElementById("nav").addEventListener("mouseout",function(){$("#mainArea").removeClass("blur");});
 
-function animateBg()
-{
-	$("#cut").addClass("fullSizeBg");
-	$("#coverText").addClass("coverTextOpaque");
-}
-
-function fixHeader()
-{
-	
-	if(document.body.scrollTop>100)
-	{
-		$("#header").addClass("fixed");
-		console.log(prevScroll);
-		prevScroll = document.body.scrollTop;
-	}
-	else if(document.body.scrollTop<=200)
-	{
-		$("#header").removeClass("fixed");
-		prevScroll = document.body.scrollTop;
-	}
-}
