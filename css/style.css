@@ -54,14 +54,14 @@ a
 .blur
 {
 	/* Webkit */
-	-webkit-filter: blur(3px);
+	-webkit-filter: blur(3px) grayscale(50%);
 
 	/* Opera */
-	-o-filter: blur(3px);
+	-o-filter: blur(3px) grayscale(50%);
 	
 	 /* Any browser which supports CSS3 */
 	filter: blur(3px) grayscale(50%);
-	transform:scale(1.01);
+	
 }
 
 .nav
@@ -108,7 +108,7 @@ a
 
 .menuLine
 {
-	width:25px;
+	width:20px;
 	height:1px;
 	background:#eee;
 	margin:auto;
@@ -131,9 +131,9 @@ a
 	padding-left:80px;
 	cursor:pointer;
 	transition:all 0.2s linear;
-	background-size: 40px;
+	background-size: 35px;
     background-repeat: no-repeat;
-    background-position: 2.5px center;
+    background-position: 5px center;
 	border-color:#fff;
 }
 
@@ -212,6 +212,7 @@ a
 	font-weight:700;
 	background:transparent;
 	padding:0;
+	text-shadow:0 1px 1px #fff;
 }
 
 .internal .sectionCaption
@@ -344,7 +345,7 @@ a
 }
 .statHolder
 {
-	background:#eee;
+	background:#ddd;
 	border-radius:2px;
 	height:15px;
 	flex:1;
@@ -355,7 +356,7 @@ a
 	background:#e74c3c;
 	border-radius:2px;
 	height:100%;
-	transition:all 0.5s linear;
+	transition:all 0.75s linear;
 }
 
 .noProgress
@@ -363,6 +364,13 @@ a
 	width:0 !important;
 }
 
+.statValue
+{
+	font-weight:700;
+	font-size:20px;
+	
+	margin-left:20px;
+}
 
 .footer
 {
@@ -374,9 +382,9 @@ a
 	background-image:url('../img/site covers 4.jpg');
 }
 
-.whiteBg
+.lightBg
 {
-	background:#fff;
+	background:#eee;
 }
 
 .redTxt
