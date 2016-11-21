@@ -96,14 +96,14 @@ a
 	padding:0px;
 	background:transparent;
 	color:#fff;	
-	width:3vw;
+	width:45px;
 	transition:all 0.5s ease-in-out;
 	text-align:center;
 }
 
 .menuLine
 {
-	width:60%;
+	width:25px;
 	height:3px;
 	background:#fff;
 	margin:auto;
@@ -223,6 +223,7 @@ a
 	flex:1;
 	align-self:center;
 	margin-right:20px;
+	width:30%;
 }
 
 .imageCardInfo
