@@ -5,7 +5,7 @@ document.getElementById("nav").addEventListener("mouseout",function(){$("#mainAr
 document.onscroll=function(){animateSkills()};
 function animateSkills()
 {
-	if(document.getElementById("stat").getBoundingClientRect().top < 450)
+	if(document.getElementById("stat").getBoundingClientRect().top < 525)
 		$(".statProgress").removeClass("noProgress");
 	
 	
