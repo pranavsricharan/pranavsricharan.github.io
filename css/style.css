@@ -287,6 +287,8 @@ a
 	background: rgba(0,0,0,0.3);
 	padding: 40px;
 	padding-top: 0px;
+	letter-spacing:2px;
+	word-spacing:5px;
 }
 
 .sectionContent
@@ -308,6 +310,8 @@ a
     animation: blink 1s infinite;
 	-webkit-animation-direction: alternate; 
     animation-direction: alternate;
+	letter-spacing:2px;
+	word-spacing:5px;
 }
 
 .btnLink
