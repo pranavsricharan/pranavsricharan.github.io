@@ -7,6 +7,7 @@
   --white: #fff;
   --light: #f2f2f2;
   --primary: #05668d;
+  --secondary: #f3a459;
   --horizontal-spacing: 15vw;
 }
 
@@ -27,7 +28,7 @@ a {
   color: var(--dark);
 }
 
-h1 {
+h1, h2 {
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -149,14 +150,38 @@ h1 {
 
 .skills {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   background-color: var(--primary);
   color: var(--white);
   gap: 64px;
 }
 
+.skills-left {
+  position: sticky;
+  top: 4rem;
+}
+
 .skills-right {
   flex: 1;
+}
+
+.skill-group {
+  margin-bottom: 4rem;
+}
+
+.skill-group-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  width: max-content;
+  color: var(--white);
+}
+
+.skill-group-title::after {
+  content: "";
+  display: block;
+  width: calc(100% + 2rem);
+  margin: 0.25rem 0;
+  border-top: 4px solid var(--secondary);
 }
 
 .skills-list {
