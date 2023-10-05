@@ -157,6 +157,7 @@ h1, h2 {
 }
 
 .skills-left {
+  position: -webkit-sticky;
   position: sticky;
   top: 4rem;
 }
@@ -170,10 +171,11 @@ h1, h2 {
 }
 
 .skill-group-title {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
   width: max-content;
   color: var(--white);
+  text-transform: uppercase;
 }
 
 .skill-group-title::after {
@@ -182,6 +184,7 @@ h1, h2 {
   width: calc(100% + 2rem);
   margin: 0.25rem 0;
   border-top: 4px solid var(--secondary);
+  border-radius: 8px;
 }
 
 .skills-list {
@@ -222,7 +225,6 @@ h1, h2 {
 
   .skills-left {
     text-align: center;
-    position: sticky;
     top: 60px;
     width: 100%;
     backdrop-filter: blur(24px);
